@@ -20,7 +20,7 @@ Losing employees is expensive: hiring, onboarding and lost productivity all cost
 
 ## Approach
 
-### 1. Data cleaning: [`sql/01_data_cleaning.sql`](sql/01_data_cleaning.sql)
+### 1. Data cleaning: 
 - Loaded the CSV into a raw table with all columns as text
 - Parsed birth and hire dates from 3 formats (`mm/dd/yyyy`, `mm-dd-yyyy`, `mm-dd-yy`) using `CASE`, `REGEXP` and `STR_TO_DATE`
 - Fixed 2-digit birth years read as future dates (e.g. 2065 → 1965)
@@ -28,7 +28,7 @@ Losing employees is expensive: hiring, onboarding and lost productivity all cost
 - Removed hidden `\r` characters from the last column
 - Calculated age, then ran quality checks: NULLs, impossible ages, exit before hire, hired before birth, duplicate IDs
 
-### 2. Business questions: [`sql/02_business_questions.sql`](sql/02_business_questions.sql)
+### 2. Business questions: 
 An employee is **active** if they have no exit date or their exit date is in the future (serving notice).
 
 | # | Question |
