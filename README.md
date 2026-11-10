@@ -2,9 +2,6 @@
 
 Cleaning raw HR records in MySQL and analysing workforce composition and attrition, to help HR see **who is leaving, from where, and when**.
 
-![Workforce overview](images/hr_overview.png)
-![Attrition drivers](images/hr_attrition_drivers.png)
-
 ## Business problem
 
 Losing employees is expensive: hiring, onboarding and lost productivity all cost money. HR leadership wants to know:
